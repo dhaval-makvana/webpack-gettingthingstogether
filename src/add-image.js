@@ -6,8 +6,8 @@ function AddImage() {
     image.src = KiwiImage;
     image.width = 400;
 
-    const body = document.querySelector('body');
-    body.appendChild(image);
+    const imageDIV = document.getElementById('image');
+    imageDIV.appendChild(image);
 };
 
 export default AddImage;
