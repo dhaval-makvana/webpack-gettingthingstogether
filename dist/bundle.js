@@ -96,10 +96,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 Object(_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"])();
 Object(_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
-const helloWorldButton =  new _components_HelloWorldButton_HelloWorldButton__WEBPACK_IMPORTED_MODULE_2__["default"]();
+var helloWorldButton = new _components_HelloWorldButton_HelloWorldButton__WEBPACK_IMPORTED_MODULE_2__["default"]();
 helloWorldButton.render();
 
 /***/ }),
@@ -109,7 +108,7 @@ helloWorldButton.render();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function HelloWorld() {
-    console.log("Hello World!");
+  console.log("Hello World!");
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloWorld);
@@ -125,15 +124,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AddImage() {
-    const image = document.createElement('img');
-    image.alt = 'Kiwi';
-    image.src = _kiwi_fruit_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;
-    image.width = 400;
+  var image = document.createElement('img');
+  image.alt = 'Kiwi';
+  image.src = _kiwi_fruit_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;
+  image.width = 400;
+  var imageDIV = document.getElementById('image');
+  imageDIV.appendChild(image);
+}
 
-    const imageDIV = document.getElementById('image');
-    imageDIV.appendChild(image);
-};
-
+;
 /* harmony default export */ __webpack_exports__["default"] = (AddImage);
 
 /***/ }),
@@ -150,24 +149,45 @@ module.exports = __webpack_require__.p + "8726c4707d88d823892acd3be94b4214.jpg";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 /* harmony import */ var _HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 // import './HelloWorldButton.css';
 
 
-class HelloWorldButton {
-    render() {
-        const button = document.createElement('button');
-        button.innerHTML = 'Hello World!';
-        button.classList.add('hello-world-button');
-        const buttonDIV = document.getElementById('hello-world-button');
-        button.onclick = function() {
-            const p = document.createElement('p');
-            p.innerHTML = 'Hello world paragragh TEXT!';
-            p.classList.add('hello-world-text');
-            buttonDIV.appendChild(p);
-        };
-        buttonDIV.appendChild(button);
+var HelloWorldButton =
+/*#__PURE__*/
+function () {
+  function HelloWorldButton() {
+    _classCallCheck(this, HelloWorldButton);
+
+    this.buttonCSSClass = 'hello-world-button';
+  }
+
+  _createClass(HelloWorldButton, [{
+    key: "render",
+    value: function render() {
+      var button = document.createElement('button');
+      button.innerHTML = 'Hello World!';
+      button.classList.add(this.buttonCSSClass);
+      var buttonDIV = document.getElementById('hello-world-button');
+
+      button.onclick = function () {
+        var p = document.createElement('p');
+        p.innerHTML = 'Hello world paragragh TEXT!';
+        p.classList.add('hello-world-text');
+        buttonDIV.appendChild(p);
+      };
+
+      buttonDIV.appendChild(button);
     }
-}
+  }]);
+
+  return HelloWorldButton;
+}();
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloWorldButton);
 

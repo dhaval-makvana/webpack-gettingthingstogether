@@ -2,10 +2,13 @@
 import './HelloWorldButton.scss';
 
 class HelloWorldButton {
+
+    buttonCSSClass = 'hello-world-button';
+
     render() {
         const button = document.createElement('button');
         button.innerHTML = 'Hello World!';
-        button.classList.add('hello-world-button');
+        button.classList.add(this.buttonCSSClass);
         const buttonDIV = document.getElementById('hello-world-button');
         button.onclick = function() {
             const p = document.createElement('p');
