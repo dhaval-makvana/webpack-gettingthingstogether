@@ -148,8 +148,9 @@ module.exports = __webpack_require__.p + "8726c4707d88d823892acd3be94b4214.jpg";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _HelloWorldButton_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
-/* harmony import */ var _HelloWorldButton_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HelloWorldButton_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var _HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HelloWorldButton_scss__WEBPACK_IMPORTED_MODULE_0__);
+// import './HelloWorldButton.css';
 
 
 class HelloWorldButton {
@@ -201,7 +202,7 @@ if(false) {}
 
 exports = module.exports = __webpack_require__(7)(false);
 // Module
-exports.push([module.i, ".hello-world-button {\r\n    font-size: 20px;\r\n    padding: 7px 15px;\r\n    background: green;\r\n    color: white;\r\n    outline: none;\r\n}\r\n\r\n.hello-world-text {\r\n    color: green;\r\n    font-weight: bold;\r\n}", ""]);
+exports.push([module.i, ".hello-world-button {\n  font-size: 20px;\n  padding: 7px 15px;\n  background: green;\n  color: white;\n  outline: none; }\n\n.hello-world-text {\n  color: green;\n  font-weight: bold; }\n", ""]);
 
 
 /***/ }),
