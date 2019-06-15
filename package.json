@@ -1,0 +1,27 @@
+{
+  "name": "webpack-learning",
+  "version": "1.0.0",
+  "description": "This is a tutorial learning project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaval-makvana/webpack-gettingthingstogether.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "dhaval makvana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhaval-makvana/webpack-gettingthingstogether/issues"
+  },
+  "homepage": "https://github.com/dhaval-makvana/webpack-gettingthingstogether#readme",
+  "devDependencies": {
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
